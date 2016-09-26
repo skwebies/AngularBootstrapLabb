@@ -4,13 +4,15 @@
     <title>Product Listing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <link href="CSS/master.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">    <link href="CSS/master.css" rel="stylesheet" />
     <link href="Content/font-awesome.css" rel="stylesheet" />
+
     <base href="/" />
 </head>
-<body ng-controller="MainController" class="container-fluid">
-<div ng-include="/Views/Partials/Navbar.html"></div>
-<main ng-view>
+<body ng-controller="MainController" >
+<div ng-include="'Views/Partials/Navbar.html'"></div>
+    
+<main ng-view class="container-fluid">
     
 </main>
 

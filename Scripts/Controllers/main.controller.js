@@ -12,6 +12,8 @@ angular.module("productListing")
 
         	$scope.products = [];
 
+            
+
 
         	$scope.go = function (url) {
         		$location.path(url);
