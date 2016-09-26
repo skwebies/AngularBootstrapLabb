@@ -6,22 +6,31 @@
     <meta charset="utf-8" />
     <link href="CSS/master.css" rel="stylesheet" />
     <link href="Content/font-awesome.css" rel="stylesheet" />
+    <base href="/" />
 </head>
 <body ng-controller="MainController" class="container-fluid">
-
+<div ng-include="/Views/Partials/Navbar.html"></div>
 <main ng-view>
     
 </main>
 
 <!--3rd party libs and frameworks-->
-<script src="Scripts/angular.min.js"></script>
-<script src="Scripts/angular-route.min.js"></script>
-<script src="Scripts/jquery-1.9.1.min.js"></script>
-<script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/jquery-3.1.0.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
 
 <!--Modules-->
-
+    <script src="Scripts/Modules/module.js"></script>
+    
+<!--Routes-->
+    <script src="Scripts/Routes/route.js"></script>
 <!--controllers-->
+    <script src="Scripts/Controllers/main.controller.js"></script>
+    <script src="Scripts/Controllers/home.controller.js"></script>
+    <script src="Scripts/Controllers/products.controller.js"></script>
+    <script src="Scripts/Controllers/product.controller.js"></script>
+    <script src="Scripts/Controllers/about.controller.js"></script>
 
 </body>
 </html>

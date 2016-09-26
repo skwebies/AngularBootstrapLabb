@@ -36,5 +36,7 @@
                     caseInsensitiveMatch: true,
                     activeTab: "About"
                 });
+
+            
         }
     ]);
