@@ -1,4 +1,27 @@
 ﻿<h1>Products</h1>
 <button class="btn btn-success" data-toggle="modal" data-target="#newProductModal">Add Product</button>
+<table class="table table-responsive table-striped">
+    <thead >
+        <tr ng-if="products.length">
+            <th>Product Name</th>
+            <th>Price (SEK)</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    
+
+        <tbody  ng-repeat="product in products track by $index">
+            <tr  class="table-condensed">
+                <td ng-bind="product.name"></td>
+                <td ng-bind="product.price"></td>
+                <td ng-bind="product.description"></td>
+                <td ng-show="!products.length"><h3>No products available! please add products</h3></td>
+                <td><button class="btn btn-danger noselect" ng-click="removeProduct($index)"><i class="fa fa-trash-o"></i></button></td>
+            </tr>
+        </tbody>
+
+
+    
+</table>
 
 <div ng-include="'Views/Partials/NewProductModal.html'"></div>
