@@ -1,2 +1,12 @@
 ﻿<div ng-include="'Views/Partials/Slider.html'"></div>
-<h1 ng-bind="title">Home</h1>
+<h1 ng-bind="title"></h1>
+
+<h2>Recently Added Products</h2>
+<div class="col-md-4" ng-repeat="product in products track by $index">
+    <div>
+        <a href="" ng-click="go('/Product/'+ product.id)"><h2 ng-bind="product.name" class="text-primary"></h2></a>
+        Price:<h3 ng-bind="product.price"></h3>
+        Description:<p ng-bind="product.description"></p>
+    </div>
+
+</div>
