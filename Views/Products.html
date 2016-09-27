@@ -10,9 +10,10 @@
     </thead>
     
 
-        <tbody  ng-repeat="product in products track by $index">
+    <tbody  ng-repeat="product in products track by $index">
+        
             <tr  class="table-condensed">
-                <td ng-bind="product.name"></td>
+                <td ><a href="" ng-click="go('/Product/' + product.id)" ng-bind="product.name"></a></td>
                 <td ng-bind="product.price"></td>
                 <td ng-bind="product.description"></td>
                 <td ng-show="!products.length"><h3>No products available! please add products</h3></td>

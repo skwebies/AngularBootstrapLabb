@@ -5,6 +5,7 @@ body {
     font-weight:200;
     font-size:2em;
     color:black;
+    background-color:#eee;
 
 }
 h1, h2, h3,h4,h5 {
@@ -86,4 +87,8 @@ z-index:999;
 }
 .price {
     width:25%;
+}
+.jumbotron {
+    background-color: #93B5C6;
+    margin-top:20px;
 }

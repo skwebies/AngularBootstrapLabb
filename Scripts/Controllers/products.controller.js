@@ -6,17 +6,23 @@
             $scope.title = "Products";
             
 
-            $scope.newProduct = {};
+            $scope.newProduct = {
+                id:"",
+                name: "",
+                price: "",
+                description:[]
+            };
 
-            $scope.addProduct = function() {
+            $scope.addProduct = function () {
+                $scope.newProduct.id = Date.now();
                 $scope.products.push($scope.newProduct);
                 $scope.newProduct = {};
 
                 $scope.saveProducts();
 
             }
-            $scope.removeProduct = function($index) {
-                $scope.products.splice($index, 1);
+            $scope.removeProduct = function(index) {
+                $scope.products.splice(index, 1);
                 alert("Confirm deletion?");
                 $scope.saveProducts();
 

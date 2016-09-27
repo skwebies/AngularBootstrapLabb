@@ -21,7 +21,7 @@
                     caseInsensitiveMatch: true,
                     activeTab: "Products"
                 })
-                .when("/Products/:id",
+                .when("/Product/:id",
                 {
                     templateUrl: "Views/Product.html",
                     controller: "ProductController",
